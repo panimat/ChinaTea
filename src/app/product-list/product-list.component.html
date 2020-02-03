@@ -1,0 +1,8 @@
+<div style="height: 400px; display: flex;">
+    <div *ngFor="let product of products">
+        <app-tea-card [data]="product"></app-tea-card>
+    </div>
+</div>
+<div>
+<app-pager></app-pager>
+</div>

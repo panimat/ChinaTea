@@ -1,0 +1,35 @@
+<div>
+    <h1>Витрина</h1>
+</div>
+<mat-tab-group>
+    <mat-tab label="Вся продукция">
+        <ng-template matTabContent> 
+            <app-product-list [category]="Category.all"></app-product-list>
+        </ng-template>
+    </mat-tab>
+    <mat-tab label="Пуэр"> 
+        <ng-template matTabContent> 
+            <app-product-list [category]="Category.puer"></app-product-list>       
+        </ng-template> 
+    </mat-tab>
+    <mat-tab label="Зеленый чай"> 
+        <ng-template matTabContent> 
+            <app-product-list [category]="Category.green"></app-product-list>      
+        </ng-template>  
+    </mat-tab>
+    <mat-tab label="Красный чай"> 
+        <ng-template matTabContent> 
+            <app-product-list [category]="Category.red"></app-product-list>
+        </ng-template>
+    </mat-tab>
+    <mat-tab label="Белый чай"> 
+        <ng-template matTabContent> 
+            <app-product-list [category]="Category.white"></app-product-list>  
+        </ng-template>      
+    </mat-tab>
+    <mat-tab label="Травяной чай"> 
+        <ng-template matTabContent> 
+            <app-product-list [category]="Category.Herbal"></app-product-list> 
+        </ng-template>       
+    </mat-tab>
+</mat-tab-group>
